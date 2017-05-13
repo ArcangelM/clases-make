@@ -65,6 +65,7 @@ texto.chars.each do |char|
 end
 /
 
+#construir un arreglo que contenga en cada campo los valores, sin , ni
 csv= <<-BEGIN
 nombre,apellico,correo
 pedro,barrios,emal@gmail
