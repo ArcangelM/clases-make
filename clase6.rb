@@ -17,7 +17,7 @@ def get_secure_password
 end
     # cuando se va a usar un metodo privado es recomendable ponerlo en la parte de abajo 
     # indentarlo debido a que los que estan en la  misa identacion los toma como pribado
-	private
+	private   # no pueden ser accedido desde una instancia 
 	def password
 	     puts ""
 	end
@@ -54,6 +54,7 @@ st= Student.new "arcangel", "marin", "makeitreal"
 
 st.name
 /
+/
 class Orden
       
      def initialize productos = []
@@ -86,3 +87,35 @@ pro.adicionar "papas"
 puts pro.productos
 pro.eliminar "chocola"
 puts pro.productos
+/
+# juego de black
+class Juego
+	attr_accessor :jugadores
+	attr_accessor :deck
+	jugador= Jugador.new
+   def initialize jugador, deck =[]
+   	@jugadores= jugadores
+   	@deck= deck
+   end
+  
+
+end
+
+class Deck
+	attr_accessor :baraja
+    def initialize baraja=[a_cora, 1_cora, 2_cora, 8_diam, 5_diam]
+        @baraja= baraja
+    end
+end 
+
+class Jugador 
+    attr_accessor :
+	def initialize nombre , mano=[]
+ 		@nombre= nombre
+ 		@mano = mano
+	end
+end
+
+
+
+# continuar con el juego de black
