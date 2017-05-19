@@ -16,3 +16,18 @@ arreglo= MakeitReal.new ['hola', 'quemas', 'hello', 'a', 'i', 'e']
 puts arreglo.sort
 puts arreglo.max 
 puts arreglo.min
+
+
+class Song 
+	attr_reader :duration
+	def initialize name, duration
+        @name = name
+        @duration = duration
+	end
+
+	
+
+end
+
+song1 = Song.new 'La camisa negra', 3.40
+song2 = Song.new 'Despacito', 2.90
