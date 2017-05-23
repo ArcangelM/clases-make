@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hola <%@nombre%></title>
+</head>
+<body style="color:white; background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQTUM6fLlS3FzjnSN_x_pu61_gLPkSd87PJFH6O1dI0afrFch7Q');background-repeat: all">
+ <table style="border: 1px">
+	
+ <% @personas.each do |person| %>
+ <%= person[:nombre]%> <%=person[:edad] %> <br>
+ 
+ <% end %>
+
+ <%if @persona %>
+   persona encontrada: <%=@persona[:nombre] %>
+ <%end%>
+</body>
+</html>
